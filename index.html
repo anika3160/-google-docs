@@ -3,15 +3,23 @@
   <head>
     <title>Google docs</title>
     <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
     <link
-      href="https://fonts.googleapis.com/css?family=Roboto:500&display=swap"
+      href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Roboto:400,500&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.css" />
+
+    <style>
+      @font-face {
+        font-family: Arial;
+        src: url("./assets/fonts/arial.ttf") format("truetype");
+      }
+    </style>
   </head>
   <body>
     <header class="header">
@@ -37,8 +45,8 @@
         </div>
       </div>
       <div>
-        <i class="material-icons header__show_chart">
-          show_chart
+        <i class="material-icons header__trending_up">
+          trending_up
         </i>
         <div class="header__insert_comment">
           <i class="material-icons">
@@ -56,5 +64,196 @@
         </div>
       </div>
     </header>
+    <main>
+      <section class="tools">
+        <div>
+          <i class="material-icons">
+            undo
+          </i>
+          <i class="material-icons">
+            redo
+          </i>
+          <i class="material-icons">
+            print
+          </i>
+          <i class="material-icons">
+            spellcheck
+          </i>
+          <i class="material-icons">
+            format_paint
+          </i>
+          <hr class="tools__vertical_line" />
+          <input name="zoom" id="zoom" list="zooms" placeholder="100%" />
+          <datalist id="zooms">
+            <option>Fit</option>
+            <hr />
+            <option>50%</option>
+            <option>75%</option>
+            <option>90%</option>
+            <option>100%</option>
+            <option>125%</option>
+            <option>150%</option>
+            <option>200%</option>
+          </datalist>
+
+          <hr class="tools__vertical_line" />
+          <select>
+            <option>Normal text</option>
+            <option>Title</option>
+            <option>Subtitle</option>
+            <option>Heading 1</option>
+            <option>Heading 2</option>
+            <option>Heading 3</option>
+            <option>150%</option>
+            <option>Options</option>
+          </select>
+          <hr class="tools__vertical_line" />
+          <select>
+            <option>More fonts</option>
+            <option>RECENT</option>
+            <option>Amatic SC</option>
+            <option>Amatic SC</option>
+            <option selected>Arial</option>
+            <option>Caveat</option>
+            <option>Comfortaa</option>
+            <option>Courier New</option>
+            <option>Lobster</option>
+          </select>
+          <hr class="tools__vertical_line" />
+          <input
+            name="fontSize"
+            id="fontSize"
+            list="fontSizes"
+            placeholder="11"
+          />
+          <datalist id="fontSizes">
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+            <option>11</option>
+            <option>12</option>
+            <option>14</option>
+            <option>18</option>
+            <option>24</option>
+            <option>30</option>
+            <option>36</option>
+            <option>48</option>
+            <option>60</option>
+            <option>72</option>
+            <option>96</option>
+          </datalist>
+          <hr class="tools__vertical_line" />
+          <div class="tools__min-768">
+            <i class="material-icons">
+              format_bold
+            </i>
+            <i class="material-icons">
+              format_italic
+            </i>
+            <i class="material-icons">
+              format_underlined
+            </i>
+            <i class="material-icons tools_text_color">
+              text_format
+            </i>
+            <i class="material-icons">
+              brush
+            </i>
+            <hr class="tools__vertical_line" />
+            <i class="material-icons">
+              link
+            </i>
+            <i class="material-icons">
+              add_comment
+            </i>
+            <i class="material-icons">
+              photo
+            </i>
+            <hr class="tools__vertical_line" />
+          </div>
+
+          <i class="material-icons tools__dots">
+            more_horiz
+          </i>
+
+          <div class="tools__min-1024">
+            <i class="material-icons">
+              format_align_left
+            </i>
+            <i class="material-icons">
+              format_align_center
+            </i>
+            <i class="material-icons">
+              format_align_right
+            </i>
+            <i class="material-icons">
+              format_align_justify
+            </i>
+            <hr class="tools__vertical_line" />
+            <i class="material-icons">
+              format_line_spacing
+            </i>
+            <hr class="tools__vertical_line" />
+            <i class="material-icons">
+              format_list_numbered
+            </i>
+            <i class="material-icons">
+              arrow_drop_down
+            </i>
+            <i class="material-icons">
+              format_list_bulleted
+            </i>
+            <i class="material-icons">
+              arrow_drop_down
+            </i>
+            <i class="material-icons"> format_indent_decrease </i>
+            <i class="material-icons">
+              format_indent_increase
+            </i>
+            <hr class="tools__vertical_line" />
+            <i class="material-icons">
+              format_clear
+            </i>
+          </div>
+        </div>
+
+        <div>
+          <div class="tools__editing">
+            <i class="material-icons">
+              create
+            </i>
+            <p class="tools__editing_name">
+              Editing
+            </p>
+
+            <i class="material-icons">
+              arrow_drop_down
+            </i>
+          </div>
+
+          <hr class="tools__vertical_line" />
+          <i class="material-icons">
+            keyboard_arrow_up
+          </i>
+        </div>
+      </section>
+      <section class="side-panel">
+        <div class="header__account">
+          <button class="header__account_btn">
+            C
+          </button>
+        </div>
+        <div class="header__account">
+          <button class="header__account_btn">
+            K
+          </button>
+        </div>
+        <div class="header__account">
+          <button class="header__account_btn">
+            T
+          </button>
+        </div>
+      </section>
+    </main>
   </body>
 </html>

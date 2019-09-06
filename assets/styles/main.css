@@ -6,11 +6,34 @@ body {
   width: 100vw;
   background-color: white;
   color: black;
-  font-weight: normal;
   font-size: 13px;
-  font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+  font-family: "Roboto-Regular", Arial, sans-serif;
   margin: 0;
   overflow: hidden;
+}
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
 }
 
 div {
@@ -64,7 +87,6 @@ div {
 .header__title {
   border: 1px solid transparent;
   font-family: "Open Sans", sans-serif;
-  font-weight: 400;
   border-radius: 2px;
   color: #77737a;
   font-size: 18px;
@@ -98,7 +120,7 @@ div {
   display: flex;
   height: 16px;
   font-size: 14px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto-Regular", sans-serif;
   white-space: nowrap;
   box-shadow: none;
   border-style: solid;
@@ -139,8 +161,7 @@ div {
   cursor: pointer;
   box-shadow: none;
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
+  font-family: "Roboto-Medium", sans-serif;
   font-size: 14px;
   height: 36px;
   letter-spacing: 0.25px;
@@ -237,8 +258,7 @@ main {
 
 .tools input {
   border: 1px solid transparent;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
+  font-family: "Roboto-Medium", sans-serif;
   border-radius: 2px;
   color: #000000;
   font-variant-ligatures: no-contextual;
@@ -259,8 +279,7 @@ main {
 }
 .tools select {
   border: 1px solid transparent;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
+  font-family: "Roboto-Medium", sans-serif;
   border-radius: 2px;
   color: #77737a;
   background-color: white;
@@ -327,8 +346,7 @@ main {
 .work-panel__white-ruler span {
   color: #3c4043;
   font-size: 10px;
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
+  font-family: "Roboto-Regular", sans-serif;
 }
 .work-panel__vertical-line_s,
 .work-panel__vertical-line_m {
@@ -370,8 +388,7 @@ main {
 .work-area__white-ruler span {
   color: #3c4043;
   font-size: 10px;
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
+  font-family: "Roboto-Regular", sans-serif;
   transform: rotate(270deg);
   margin: 1px 0;
 }
